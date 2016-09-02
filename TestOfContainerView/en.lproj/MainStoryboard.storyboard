@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" userLabel="View Controller" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="d19-eB-83O"/>
+                        <viewControllerLayoutGuide type="bottom" id="b4h-9c-iuL"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.99999999999999989" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="piw-Qs-JRI" userLabel="AVFoundation View">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <containerView opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.99999999999999989" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nvp-q9-PZG">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="2fu-n5-wYi" kind="embed" id="NFs-Qs-Qkx"/>
+                                </connections>
+                            </containerView>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Look At Vector Output" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="81T-Gt-nEN" userLabel="Compass Output">
+                                <rect key="frame" x="0.0" y="38" width="320" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3D Object Output" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="96P-rs-FUn" userLabel="3D Object Output">
+                                <rect key="frame" x="0.0" y="122" width="320" height="161"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" misplaced="YES" text="Awesome, isn't it??!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="TD6-uH-0Rg">
+                                <rect key="frame" x="0.0" y="280" width="320" height="200"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="108" id="yY2-g4-ktn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <button opaque="NO" alpha="0.49999999999999961" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJO-B7-Hc9">
+                                <rect key="frame" x="158" y="430" width="162" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Show Debug Info">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleDebugInfo:" destination="2" eventType="touchUpInside" id="rD0-vg-w5F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.49999999999999961" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MdD-Rv-24X">
+                                <rect key="frame" x="0.0" y="430" width="157" height="51"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Calibrate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonCalibrate:" destination="2" eventType="touchUpInside" id="JSy-k5-MJ8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="piw-Qs-JRI" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" id="1fu-Dv-Ft8"/>
+                            <constraint firstItem="piw-Qs-JRI" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" id="GZA-PH-D9u"/>
+                            <constraint firstItem="nvp-q9-PZG" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" id="Yfa-rT-isV"/>
+                            <constraint firstItem="nvp-q9-PZG" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" id="co0-er-jiD"/>
+                            <constraint firstItem="nvp-q9-PZG" firstAttribute="top" secondItem="3" secondAttribute="top" id="ePG-Il-FYH"/>
+                            <constraint firstItem="piw-Qs-JRI" firstAttribute="top" secondItem="3" secondAttribute="top" id="hq6-Cs-9vS"/>
+                            <constraint firstItem="nvp-q9-PZG" firstAttribute="leading" secondItem="3" secondAttribute="leading" id="jUu-Bm-Ab4"/>
+                            <constraint firstItem="piw-Qs-JRI" firstAttribute="leading" secondItem="3" secondAttribute="leading" id="n6g-uH-8YJ"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="btnToggleDebugInfo" destination="aJO-B7-Hc9" id="5OI-JQ-0jn"/>
+                        <outlet property="compassOutput" destination="81T-Gt-nEN" id="hr1-Ve-TCv"/>
+                        <outlet property="containerView" destination="nvp-q9-PZG" id="5Pe-Ee-ovT"/>
+                        <outlet property="gpsCoordinatesLabel" destination="TD6-uH-0Rg" id="qNC-6g-crF"/>
+                        <outlet property="subView1" destination="piw-Qs-JRI" id="84N-UM-YI1"/>
+                        <outlet property="threeDObjectOutput" destination="96P-rs-FUn" id="mLl-iN-6br"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-263" y="17"/>
+        </scene>
+        <!--GLKit View Controller-->
+        <scene sceneID="Pgy-ta-6kf">
+            <objects>
+                <glkViewController autoresizesArchivedViewToFullSize="NO" preferredFramesPerSecond="30" id="2fu-n5-wYi" customClass="OpenGLViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="czJ-zF-TUT"/>
+                        <viewControllerLayoutGuide type="bottom" id="gFR-Fj-ISE"/>
+                    </layoutGuides>
+                    <glkView key="view" opaque="NO" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="center" id="s8B-sq-pTG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="delegate" destination="2fu-n5-wYi" id="0Yv-Wl-A8M"/>
+                        </connections>
+                    </glkView>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                </glkViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lLm-dU-Jb6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="388" y="17"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

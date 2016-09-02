@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Love Triangle App.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>BC3A124716A699AD00CFDD85</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BC541FAC18F8CD9E00312EA9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BC6F76D0171C76DF008B6CD6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BC6F76F4171CAD15008B6CD6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BC8ED32A18FCC1AC00FA9EE3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BCEFC6C5173C5B5500D2271B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

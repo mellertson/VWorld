@@ -11,6 +11,8 @@ I'm adding it here with the hope maybe someone will pick it up and at least lear
 
 In it's current state, it renders 3D objects on the screen, fully integrated with the video stream from the camera.  Objects are inserted into a 3 dimensional coordinate system using GPS coordinates, in the same format the Google's Map API provides.
 
+![3D objects rotating in a Geographic Coordinate System](https://github.com/mellertson/VWorld/blob/master/assets/3-screens-3d-shapes-rotating.jpg)
+
 **One key technical challenge remains:** finding a way to calculate the device's localized, and precise, GPS coordinates and altitude above ground level (AGL).  I've investigated using a few different localization methods, including fltering noisy GPS and telemetry data, visual SLAM and SLAM based on GPS and Wi-Fi data.  The filtering methods I implemented didn't seem to eliminate the noise sufficiently.  
 
 It's my understanding SLAM has now been implemented by several companies, one was purchased by Apple and integrated into iOS.  It should now be a fairly trivial matter to get a precise localized vector without introducing the noise when accessing GPS and telemetry devices directly.  

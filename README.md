@@ -9,7 +9,7 @@ At the time, Google Glass hadn't been released, nor Oculus Rift, Meta 2 Spacegla
 
 I'm adding it here with the hope maybe someone will pick it up and at least learn something to help them make the next killer app.  Or perhaps pick it up and run with it, please contact me if you do, I'll help!!  :-)
 
-In it's current state, it renders 3D objects on the screen, fully integrated with the video stream from the camera.  Objects are inserted into a 3 dimensional coordinate system using GPS coordinates, in the same format the Google's Map API provides.
+In it's current state, it renders 3D objects on the screen, fully integrated with the video stream from the camera.  Objects are inserted into a 3 dimensional coordinate system using GPS coordinates, in the Geographic Coordinate System.
 
 ![3D objects rotating in a Geographic Coordinate System](https://github.com/mellertson/VWorld/blob/master/assets/3-screens-3d-shapes-rotating.jpg)
 
